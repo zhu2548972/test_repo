@@ -30,6 +30,7 @@ groups of waiting times to the next eruption: One group with mean around
 ```{r, warning=FALSE, message=FALSE}
 library(ggplot2)
 library(dplyr) 
+library(sqldf)
 
 faithful %>% 
     ggplot(aes(x = waiting)) + geom_histogram(binwidth = 2) + 
